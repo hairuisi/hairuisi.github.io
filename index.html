@@ -1,63 +1,64 @@
 
-<html xmlns="http://www.w3.org/1999/xhtml"xml：lang ="zh-CN" "lang"zh-CN " "类="翻译-ltr" ><头< <元 http-equiv="内容类型"内容*"文本/html; 字符集 _UTF-8"><样式类型="文本/css"abt="234"></样式<链接类型="文本/css""rel="样式表"字符集"UTF-8" href="./indxe_files/翻译元素.css" ><脚本 src_" ./indxe_files/push.js.="></脚本>脚本> 脚本 >//删除百度搜索广告
-变量_countAA = 0
-函数 doBBBd(){
-    var alla = 文档。获取元素按标签名称（'a')
-    （var i = 0;i  < alla. 长度;i ++){
-        （/baidu.com\/（baidu.php+？网址| |adrc.php？？t）/.测试（alla=i].href)){
-            瓦尔_temp = all_i=.父元素， 循环 = 0
-            而（循环 < 5){
-                _temp = _temp。父元素
-                环++
-                如果（_temp.父元素。id = "content_left"){
-                    _temp.删除()
-                    打破
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css" abt="234"></style><link type="text/css" rel="stylesheet" charset="UTF-8" href="./indxe_files/translateelement.css"><script src="./indxe_files/push.js.下载"></script><script>//remove baidu search ad
+var _countAA = 0
+function doBBBd(){
+    var alla = document.getElementsByTagName('a')
+    for(var i = 0; i < alla.length; i++){
+        if(/baidu.com\/(baidu.php\?url=|adrc.php\?t)/.test(alla[i].href)){
+            var _temp = alla[i].parentElement, loop = 0
+            while(loop < 5){
+                _temp = _temp.parentElement
+                loop++
+                if(_temp.parentElement.id == 'content_left'){
+                    _temp.remove()
+                    break
                 }
             }
         }
     }
 
-    （_countAA= < 20){
-        设置超时（多BBBd， 500)
+    if(_countAA++ < 20){
+        setTimeout(doBBBd, 500)
     }
 
 }
-多BBBd()
-文档。addEventListener（"键up"，函数（）[_countAA-10;多BBBd（）=， 假)
-文档。添加事件侦听器（''点击'， 功能（）[_countAA-=10;多BBBd（）=， 假)
-删除搜狐视频广告
-如果（文档。URL.索引Of（"tv.sohu.com"） >= 0）*
-如果（文档.cookie.indexOf（"fee_status[true]）=-1）[文档.cookie]fee_status[true];
+doBBBd()
+document.addEventListener('keyup', function(){_countAA-=10;doBBBd()}, false)
+document.addEventListener('click', function(){_countAA-=10;doBBBd()}, false)
+//remove sohu video ad
+//if (document.URL.indexOf("tv.sohu.com") >= 0){
+//    if (document.cookie.indexOf("fee_status=true")==-1){document.cookie='fee_status=true'};
 //}
-删除56.com视频广告
-如果（文档。URL.索引Of（"56.com"） >= 0）*
-如果（文档.cookie.indexOf（"fee_status[true]）=-1）[文档.cookie]fee_status[true];
+//remove 56.com video ad
+//if (document.URL.indexOf("56.com") >= 0){
+//    if (document.cookie.indexOf("fee_status=true")==-1){document.cookie='fee_status=true'};
 //}
-</脚本></头><body>
+</script></head><body>﻿
 
 
 
-	<标题>11111</标题>
+	<title>11111</title>
 
 
 
-	<样式类型="文本/css">
-		@font面 {
-			字体系列：数字;
-			src： url（url ） "/模板/muban13/数字-7_mono.ttf"/_tpa_./数字-7_mono.ttf_/）格式（"真型");
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url("/template/muban13/digital-7_mono.ttf"/*tpa=./digital-7_mono.ttf*/) format("truetype");
 		}
-	</风格>
-	<链接 href="./indxe_files/default.css "tppabs"/模板/muban13/css/default.css"类型="文本/css"rel="样式表">
-	<脚本src="./indxe_files/push.js（1）. ">< &lt;脚本类型"文本/javascript"src="./indxe_files/jquery.js.= " t_ababs="/模板/muban13/js/jquery.js"> <>
-	<脚本类型="文本/javascript" src="./indxe_files/garden.js.js.= "tppabs"/模板/muban13/js/garden.js">< /脚本>
-    <脚本类型="文本/javascript" src="./indxe_files/函数.js.js.= "tppabs="/模板/muban13/js/函数.js"></脚本>
- <脚本 src="./indxe_files/common_love.js.="></脚本>
+	</style>
+	<link href="./indxe_files/default.css" tppabs="/template/muban13/css/default.css" type="text/css" rel="stylesheet">
+	<script src="./indxe_files/push.js(1).下载"></script><script type="text/javascript" src="./indxe_files/jquery.js.下载" tppabs="/template/muban13/js/jquery.js"></script>
+	<script type="text/javascript" src="./indxe_files/garden.js.下载" tppabs="/template/muban13/js/garden.js"></script>
+    <script type="text/javascript" src="./indxe_files/functions.js.下载" tppabs="/template/muban13/js/functions.js"></script>
+ <script src="./indxe_files/common_love.js.下载"></script>
 
-	<div id ="goog-gt-tt"类="跳过翻译"dir="ltr">div样式="填充：8px;"<div><div 类="徽标"> <img src="./indxe_files/translate_24dp.png"宽度="20"高度="20" alt= " ""></div< < < < < < div></div>div 类="顶部"样式"填充：8px;浮动：左侧;宽度：100%;"><h1 类="标题灰色"></h1</div<div 类="中间"样式="填充： 8px;">div 类="原始文本"></div</div>div类="底部"样式="填充：8px;">div 类="活动链接">跨类="活动-链接""></跨类<跨类"活动链接"></范围<& lt;/ 范围 </ 范围 </ 范围 </ 范围 <或"活动链接"><gt;<// div<div 类="启动活动容器">hr 样式="颜色：#CCC;背景色：#CCC;高度：1px;边框：无;">div 类="活动根"></div</div></div>div 类="状态消息"样式="显示：无;"></div></div> div id="主 Div"，</ ">
-		<div id="内容"样式"宽度：1110px;高度：625px;边距顶部：154px;左边距：396.5px;">
-    <div id="代码"样式="边距顶部： 112.5px;"> 
-     <跨类="注释"> 
-	 <p>字体样式="垂直对齐：继承;"<字体样式="垂直对齐：继承;">< /字体</字体</p >
+	<div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./indxe_files/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div><div id="mainDiv">
+		<div id="content" style="width: 1110px; height: 625px; margin-top: 154px; margin-left: 396.5px;">
+    <div id="code" style="margin-top: 112.5px;"> 
+     <span class="comments"> 
+	 <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">你的出现，占满了我的视线，我愿跟随你永远`</font></font></p>
 	 <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自从遇见你那天开始，我的心就像落进深深的湖水，推不开躲不掉，心一直想往你身上靠`</font></font></p>
 	  <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">只要你愿意，当你失落失意的时候，需要一个肩膀骨折的时候，告诉我，我会立即出现</font></font></p>
 	  <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">之前我不相信一见钟情，但是见到你的那一刻，我否定了我的看法。我的心为你沦陷，从此只为你跳</font></font></p></span></div> 
